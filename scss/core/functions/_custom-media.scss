@@ -1,0 +1,4 @@
+@function custom-media($name, $size, $type: 'max') {
+  $query-type: if($type == 'min', 'min-width', 'max-width');
+  @return 'screen and (#{$query-type}: #{$size}px)';
+}
