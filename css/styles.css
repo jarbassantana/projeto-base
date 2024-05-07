@@ -19,6 +19,13 @@
   font-display: swap;
   src: url("../../fonts/Aspekta-700.woff2") format("woff2");
 }
+/**
+ * Flex Element Mixin
+ * @param $align - the align-items value (default: center)
+ * @param $justify - the justify-content value (default: center)
+ * @param $direction - the flex-direction value (default: column)
+ * @param $wrap - the flex-wrap value (default: nowrap)
+ */
 * {
   margin: 0;
   padding: 0;
@@ -67,4 +74,11 @@ html {
 body {
   overflow-x: hidden !important;
   font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 78rem;
+  margin: 0 auto;
 }

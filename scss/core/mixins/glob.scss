@@ -1,6 +1,26 @@
-@mixin flex-element($align, $justify, $direction: column) {
+// @mixin flex-element($align, $justify, $direction: column) {
+//   display: flex;
+//   align-items: $align;
+//   justify-content: $justify;
+//   flex-direction: $direction;
+// }
+
+/**
+ * Flex Element Mixin
+ * @param $align - the align-items value (default: center)
+ * @param $justify - the justify-content value (default: center)
+ * @param $direction - the flex-direction value (default: column)
+ * @param $wrap - the flex-wrap value (default: nowrap)
+ */
+@mixin flex-element(
+  $align: center,
+  $justify: center,
+  $direction: column,
+  $wrap: nowrap
+) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   flex-direction: $direction;
+  flex-wrap: $wrap;
 }

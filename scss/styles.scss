@@ -1,3 +1,11 @@
 @import './autoload/glob.scss';
 
+@import './core/mixins/glob.scss';
+
+@import './core/functions/glob.scss';
+
 @import './comum/glob.scss';
+
+@import './componentes/glob.scss';
+
+@import './pages/glob.scss';
